@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="TestRunner2(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.vTiger.Testscripts.createContacts">
+        <methods>
+          <include name="ConfigBM"/>
+          <include name="createContactsTest"/>
+          <include name="configAC"/>
+          <include name="ConfigBC"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- com.vTiger.Testscripts.createContacts -->
+      <class name="com.vTiger.Testscripts.createCampaignTest">
+        <methods>
+          <include name="ConfigBM"/>
+          <include name="createCampaign"/>
+          <include name="configAC"/>
+          <include name="ConfigBC"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- com.vTiger.Testscripts.createCampaignTest -->
+    </classes>
+  </test> <!-- TestRunner2(failed) -->
+</suite> <!-- Failed suite [Suite] -->

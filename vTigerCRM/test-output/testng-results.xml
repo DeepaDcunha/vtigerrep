@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="1" ignored="0" total="8" passed="6">
+  <reporter-output>
+    <line>
+      <![CDATA[Contact page is not displayed--> FAIL]]>
+    </line>
+    <line>
+      <![CDATA[Create contact page is displayed]]>
+    </line>
+  </reporter-output>
+  <suite name="Suite" duration-ms="388939" started-at="2020-04-23T09:22:15Z" finished-at="2020-04-23T09:28:44Z">
+    <groups>
+    </groups>
+    <test name="TestRunner2" duration-ms="311163" started-at="2020-04-23T09:22:15Z" finished-at="2020-04-23T09:27:26Z">
+      <class name="com.vTiger.Testscripts.createOpportunityTest">
+        <test-method status="PASS" signature="ConfigBC(java.lang.String)[pri:0, instance:com.vTiger.Testscripts.createOpportunityTest@42dafa95]" name="ConfigBC" is-config="true" duration-ms="35098" started-at="2020-04-23T09:23:26Z" finished-at="2020-04-23T09:24:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBC -->
+        <test-method status="PASS" signature="ConfigBM()[pri:0, instance:com.vTiger.Testscripts.createOpportunityTest@42dafa95]" name="ConfigBM" is-config="true" duration-ms="8231" started-at="2020-04-23T09:24:01Z" finished-at="2020-04-23T09:24:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method status="PASS" signature="createOpportunity()[pri:0, instance:com.vTiger.Testscripts.createOpportunityTest@42dafa95]" name="createOpportunity" duration-ms="36067" started-at="2020-04-23T09:24:09Z" finished-at="2020-04-23T09:24:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOpportunity -->
+        <test-method status="FAIL" signature="configAM()[pri:0, instance:com.vTiger.Testscripts.createOpportunityTest@42dafa95]" name="configAM" is-config="true" duration-ms="4413" started-at="2020-04-23T09:24:45Z" finished-at="2020-04-23T09:24:50Z">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element reference of <img src="themes/softed/images/user.PNG"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-I4KMK004', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 2164, moz:profile: C:\Users\Andrea\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f67cc2f-f3a3-4042-a045-334cd44cc310]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element reference of <img src="themes/softed/images/user.PNG"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-I4KMK004', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 2164, moz:profile: C:\Users\Andrea\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2f67cc2f-f3a3-4042-a045-334cd44cc310
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:595)
+at com.vTigerCRM.genericLib.Base.configAM(Base.java:91)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.vTiger.Testscripts.createOpportunityTest@42dafa95]" name="configAC" is-config="true" duration-ms="0" started-at="2020-04-23T09:24:50Z" finished-at="2020-04-23T09:24:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.vTiger.Testscripts.createOpportunityTest -->
+      <class name="com.vTiger.Testscripts.createOrganisationTest">
+        <test-method status="PASS" signature="ConfigBC(java.lang.String)[pri:0, instance:com.vTiger.Testscripts.createOrganisationTest@402a079c]" name="ConfigBC" is-config="true" duration-ms="24625" started-at="2020-04-23T09:26:31Z" finished-at="2020-04-23T09:26:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBC -->
+        <test-method status="PASS" signature="ConfigBM()[pri:0, instance:com.vTiger.Testscripts.createOrganisationTest@402a079c]" name="ConfigBM" is-config="true" duration-ms="6155" started-at="2020-04-23T09:26:55Z" finished-at="2020-04-23T09:27:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method status="PASS" signature="createOrganisation()[pri:0, instance:com.vTiger.Testscripts.createOrganisationTest@402a079c]" name="createOrganisation" duration-ms="23239" started-at="2020-04-23T09:27:01Z" finished-at="2020-04-23T09:27:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrganisation -->
+        <test-method status="FAIL" signature="configAM()[pri:0, instance:com.vTiger.Testscripts.createOrganisationTest@402a079c]" name="configAM" is-config="true" duration-ms="1455" started-at="2020-04-23T09:27:25Z" finished-at="2020-04-23T09:27:26Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to convert data to an object
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-I4KMK004', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 13632, moz:profile: C:\Users\Andrea\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7982541d-0c15-4dd6-b57b-5fee81014ac2
+*** Element info: {Using=link text, value=Sign Out}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to convert data to an object
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-I4KMK004', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 75.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200403170909, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 13632, moz:profile: C:\Users\Andrea\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7982541d-0c15-4dd6-b57b-5fee81014ac2
+*** Element info: {Using=link text, value=Sign Out}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.vTigerCRM.genericLib.Base.configAM(Base.java:92)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.vTiger.Testscripts.createOrganisationTest@402a079c]" name="configAC" is-config="true" duration-ms="0" started-at="2020-04-23T09:27:26Z" finished-at="2020-04-23T09:27:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.vTiger.Testscripts.createOrganisationTest -->
+      <class name="com.vTiger.Testscripts.createContacts">
+        <test-method status="PASS" signature="ConfigBC(java.lang.String)[pri:0, instance:com.vTiger.Testscripts.createContacts@6500df86]" name="ConfigBC" is-config="true" duration-ms="37285" started-at="2020-04-23T09:24:50Z" finished-at="2020-04-23T09:25:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBC -->
+        <test-method status="PASS" signature="ConfigBM()[pri:0, instance:com.vTiger.Testscripts.createContacts@6500df86]" name="ConfigBM" is-config="true" duration-ms="5824" started-at="2020-04-23T09:25:27Z" finished-at="2020-04-23T09:25:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method status="FAIL" signature="createContactsTest()[pri:0, instance:com.vTiger.Testscripts.createContacts@6500df86]" name="createContactsTest" duration-ms="27402" started-at="2020-04-23T09:25:33Z" finished-at="2020-04-23T09:26:00Z">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.assertTrue(Assert.java:41)
+at org.junit.Assert.assertTrue(Assert.java:52)
+at com.vTiger.Testscripts.createContacts.createContactsTest(createContacts.java:62)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[Contact page is not displayed--> FAIL]]>
+            </line>
+            <line>
+              <![CDATA[Create contact page is displayed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createContactsTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vTiger.Testscripts.createContacts@6500df86]" name="configAM" is-config="true" duration-ms="4887" started-at="2020-04-23T09:26:00Z" finished-at="2020-04-23T09:26:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.vTiger.Testscripts.createContacts@6500df86]" name="configAC" is-config="true" duration-ms="25605" started-at="2020-04-23T09:26:05Z" finished-at="2020-04-23T09:26:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.vTiger.Testscripts.createContacts -->
+      <class name="com.vTiger.Testscripts.createCampaignTest">
+        <test-method status="FAIL" signature="ConfigBC(java.lang.String)[pri:0, instance:com.vTiger.Testscripts.createCampaignTest@589838eb]" name="ConfigBC" is-config="true" duration-ms="70175" started-at="2020-04-23T09:22:15Z" finished-at="2020-04-23T09:23:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[connection refused
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-I4KMK004', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: connection refused
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-I4KMK004', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.vTigerCRM.genericLib.Base.ConfigBC(Base.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBC -->
+        <test-method status="SKIP" signature="ConfigBM()[pri:0, instance:com.vTiger.Testscripts.createCampaignTest@589838eb]" name="ConfigBM" is-config="true" duration-ms="0" started-at="2020-04-23T09:23:26Z" finished-at="2020-04-23T09:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method status="SKIP" signature="createCampaign()[pri:0, instance:com.vTiger.Testscripts.createCampaignTest@589838eb]" name="createCampaign" duration-ms="0" started-at="2020-04-23T09:23:26Z" finished-at="2020-04-23T09:23:26Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[connection refused
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-I4KMK004', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: connection refused
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'LAPTOP-I4KMK004', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: 
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
+at com.vTigerCRM.genericLib.Base.ConfigBC(Base.java:40)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCampaign -->
+        <test-method status="SKIP" signature="configAM()[pri:0, instance:com.vTiger.Testscripts.createCampaignTest@589838eb]" name="configAM" is-config="true" duration-ms="0" started-at="2020-04-23T09:23:26Z" finished-at="2020-04-23T09:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="SKIP" signature="configAC()[pri:0, instance:com.vTiger.Testscripts.createCampaignTest@589838eb]" name="configAC" is-config="true" duration-ms="0" started-at="2020-04-23T09:23:26Z" finished-at="2020-04-23T09:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.vTiger.Testscripts.createCampaignTest -->
+    </test> <!-- TestRunner2 -->
+    <test name="TestRunner1" duration-ms="388939" started-at="2020-04-23T09:22:15Z" finished-at="2020-04-23T09:28:44Z">
+      <class name="com.vTiger.Testscripts.createSalesTest">
+        <test-method status="PASS" signature="ConfigBC(java.lang.String)[pri:0, instance:com.vTiger.Testscripts.createSalesTest@6f7fd0e6]" name="ConfigBC" is-config="true" duration-ms="16216" started-at="2020-04-23T09:22:15Z" finished-at="2020-04-23T09:22:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBC -->
+        <test-method status="PASS" signature="ConfigBM()[pri:0, instance:com.vTiger.Testscripts.createSalesTest@6f7fd0e6]" name="ConfigBM" is-config="true" duration-ms="9180" started-at="2020-04-23T09:22:31Z" finished-at="2020-04-23T09:22:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method status="PASS" signature="createSales()[pri:0, instance:com.vTiger.Testscripts.createSalesTest@6f7fd0e6]" name="createSales" duration-ms="109730" started-at="2020-04-23T09:22:41Z" finished-at="2020-04-23T09:24:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSales -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vTiger.Testscripts.createSalesTest@6f7fd0e6]" name="configAM" is-config="true" duration-ms="5456" started-at="2020-04-23T09:24:30Z" finished-at="2020-04-23T09:24:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.vTiger.Testscripts.createSalesTest@6f7fd0e6]" name="configAC" is-config="true" duration-ms="1909" started-at="2020-04-23T09:24:36Z" finished-at="2020-04-23T09:24:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.vTiger.Testscripts.createSalesTest -->
+      <class name="com.vTiger.Testscripts.createVendor">
+        <test-method status="PASS" signature="ConfigBC(java.lang.String)[pri:0, instance:com.vTiger.Testscripts.createVendor@3e6fa38a]" name="ConfigBC" is-config="true" duration-ms="21511" started-at="2020-04-23T09:26:38Z" finished-at="2020-04-23T09:27:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBC -->
+        <test-method status="PASS" signature="ConfigBM()[pri:0, instance:com.vTiger.Testscripts.createVendor@3e6fa38a]" name="ConfigBM" is-config="true" duration-ms="7971" started-at="2020-04-23T09:27:00Z" finished-at="2020-04-23T09:27:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method status="PASS" signature="createVendorTest()[pri:0, instance:com.vTiger.Testscripts.createVendor@3e6fa38a]" name="createVendorTest" duration-ms="29441" started-at="2020-04-23T09:27:08Z" finished-at="2020-04-23T09:27:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createVendorTest -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vTiger.Testscripts.createVendor@3e6fa38a]" name="configAM" is-config="true" duration-ms="4354" started-at="2020-04-23T09:27:37Z" finished-at="2020-04-23T09:27:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.vTiger.Testscripts.createVendor@3e6fa38a]" name="configAC" is-config="true" duration-ms="2747" started-at="2020-04-23T09:27:41Z" finished-at="2020-04-23T09:27:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.vTiger.Testscripts.createVendor -->
+      <class name="com.vTiger.Testscripts.createQuotesTest">
+        <test-method status="PASS" signature="ConfigBC(java.lang.String)[pri:0, instance:com.vTiger.Testscripts.createQuotesTest@47c62251]" name="ConfigBC" is-config="true" duration-ms="19161" started-at="2020-04-23T09:24:38Z" finished-at="2020-04-23T09:24:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBC -->
+        <test-method status="PASS" signature="ConfigBM()[pri:0, instance:com.vTiger.Testscripts.createQuotesTest@47c62251]" name="ConfigBM" is-config="true" duration-ms="11280" started-at="2020-04-23T09:24:57Z" finished-at="2020-04-23T09:25:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method status="PASS" signature="createQuotes()[pri:0, instance:com.vTiger.Testscripts.createQuotesTest@47c62251]" name="createQuotes" duration-ms="83930" started-at="2020-04-23T09:25:08Z" finished-at="2020-04-23T09:26:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createQuotes -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vTiger.Testscripts.createQuotesTest@47c62251]" name="configAM" is-config="true" duration-ms="2908" started-at="2020-04-23T09:26:32Z" finished-at="2020-04-23T09:26:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.vTiger.Testscripts.createQuotesTest@47c62251]" name="configAC" is-config="true" duration-ms="3304" started-at="2020-04-23T09:26:35Z" finished-at="2020-04-23T09:26:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.vTiger.Testscripts.createQuotesTest -->
+      <class name="com.vTiger.Testscripts.createProductsTest">
+        <test-method status="PASS" signature="ConfigBC(java.lang.String)[pri:0, instance:com.vTiger.Testscripts.createProductsTest@66a3ffec]" name="ConfigBC" is-config="true" duration-ms="15477" started-at="2020-04-23T09:27:44Z" finished-at="2020-04-23T09:28:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBC -->
+        <test-method status="PASS" signature="ConfigBM()[pri:0, instance:com.vTiger.Testscripts.createProductsTest@66a3ffec]" name="ConfigBM" is-config="true" duration-ms="9027" started-at="2020-04-23T09:28:00Z" finished-at="2020-04-23T09:28:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigBM -->
+        <test-method status="PASS" signature="createProduct()[pri:0, instance:com.vTiger.Testscripts.createProductsTest@66a3ffec]" name="createProduct" duration-ms="31883" started-at="2020-04-23T09:28:09Z" finished-at="2020-04-23T09:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProduct -->
+        <test-method status="PASS" signature="configAM()[pri:0, instance:com.vTiger.Testscripts.createProductsTest@66a3ffec]" name="configAM" is-config="true" duration-ms="2587" started-at="2020-04-23T09:28:41Z" finished-at="2020-04-23T09:28:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method status="PASS" signature="configAC()[pri:0, instance:com.vTiger.Testscripts.createProductsTest@66a3ffec]" name="configAC" is-config="true" duration-ms="823" started-at="2020-04-23T09:28:43Z" finished-at="2020-04-23T09:28:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.vTiger.Testscripts.createProductsTest -->
+    </test> <!-- TestRunner1 -->
+  </suite> <!-- Suite -->
+</testng-results>
