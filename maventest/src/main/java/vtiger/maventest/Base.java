@@ -33,14 +33,14 @@ public class Base {
 			{
 				
 				driver= new ChromeDriver();
-				
+				staticdriver=driver;
 				System.out.println(" Browser is launched successfully--> PASS");
 				
 			}
 			else
 			{
 				 driver= new FirefoxDriver();
-				
+				 staticdriver=driver;
 				System.out.println(" Browser is launched successfully--> PASS");
 				
 			}
