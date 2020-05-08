@@ -19,7 +19,7 @@ public class CreateContactTest extends Base {
 			home.getContactlink().click();
 			contacts=PageFactory.initElements(driver, Contacts.class);
 			contacts.contactTest(lib.getExcelData("Contacts", 1, 0), lib.getExcelData("Contacts", 1, 1));
-			
+			System.out.println("Executed");
 		}
 
 }
